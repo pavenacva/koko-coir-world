@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KoKo Coir World — Grow anything. Harm nothing.</title>
-<meta name="description" content="KoKo Coir Plugs — 125 premium coco coir seed starter plugs. 100% plant-based, vegan, peat-free and biodegradable. Grow seedlings, cuttings, microgreens and hydroponics the sustainable way.">
+<title>KoKo Coir World — Premium Coir Growing Products</title>
+<meta name="description" content="KoKo Coir World — 8 premium coir growing products including Coco Plugs, Coir Bricks, 5kg Blocks, Cocochips, Neem Oil, Mini Greenhouses, and more. 100% plant-based, vegan, peat-free. Ships from McKinney, Texas.">
 <style>
   :root{
     --bg:#fafaf8; --bg-alt:#f1f3ee; --ink:#1d1d1f; --muted:#6e6e73;
@@ -178,6 +178,27 @@
   .spec .k{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:6px}
   .spec .v{font-weight:700;letter-spacing:-.01em}
 
+  /* ---------- Product Catalogue ---------- */
+  .catalogue{background:var(--bg)}
+  .prod-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:0}
+  @media(max-width:1000px){.prod-cards{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.prod-cards{grid-template-columns:1fr}}
+  .prod-card{
+    background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:24px;
+    padding:28px 24px;display:flex;flex-direction:column;gap:10px;
+    box-shadow:0 2px 14px rgba(0,0,0,.04);transition:box-shadow .2s,transform .15s;
+  }
+  .prod-card:hover{box-shadow:0 8px 28px rgba(0,0,0,.1);transform:translateY(-2px)}
+  .prod-card .badge{font-size:2rem;margin-bottom:4px}
+  .prod-card h3{font-size:1.05rem;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+  .prod-card .prod-desc{color:var(--muted);font-size:.88rem;line-height:1.5;flex:1}
+  .prod-card .prod-price{
+    display:flex;align-items:center;justify-content:space-between;
+    margin-top:8px;padding-top:12px;border-top:1px solid rgba(0,0,0,.06);
+  }
+  .prod-card .p-price{font-weight:700;font-size:1.15rem;color:var(--green)}
+  .prod-card .p-weight{font-size:.78rem;color:var(--muted)}
+
   /* ---------- FAQ ---------- */
   .faq{max-width:760px;margin:0 auto}
   details{
@@ -223,19 +244,19 @@
     <div class="nav-links">
       <a href="#how">How It Works</a>
       <a href="#eco">Sustainability</a>
-      <a href="#product">Product</a>
+      <a href="#catalogue">Products</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a class="nav-cta" href="#product">Buy</a>
+    <a class="nav-cta" href="#catalogue">Shop All</a>
   </div>
 </nav>
 
 <header class="hero" id="top">
-  <span class="eyebrow">🌱 100% Plant-Based · Vegan · Peat-Free</span>
+  <span class="eyebrow">🌱 100% Plant-Based · Vegan · Peat-Free · 7 Products</span>
   <h1>Grow anything.<br><span class="soft">Harm nothing.</span></h1>
-  <p class="hero-sub">KoKo Coir Plugs turn discarded coconut husks into the perfect home for your seeds. 125 plugs. Zero peat. Endless possibilities.</p>
+  <p class="hero-sub">KoKo Coir World turns discarded coconut husks into premium growing products — from seed-starter plugs and coir bricks to neem oil, cocochips, and mini greenhouses. Shipped from McKinney, Texas.</p>
   <div class="cta-row">
-    <a class="btn btn-primary" href="#product">Buy Coco Plugs · $18.99</a>
+    <a class="btn btn-primary" href="#catalogue">Shop All Products</a>
     <a class="btn btn-ghost" href="#how">See how it works</a>
   </div>
   <div class="hero-art reveal">
@@ -420,65 +441,90 @@
   </div>
 </section>
 
-<!-- ============ PRODUCT / BUY ============ -->
-<section class="product" id="product">
+<!-- ============ PRODUCT CATALOGUE ============ -->
+<section class="catalogue" id="catalogue">
   <div class="wrap">
-    <div class="prod-grid">
-      <div class="prod-art reveal">
-        <svg viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KoKo Coir Plugs product pack">
-          <rect x="60" y="40" width="280" height="280" rx="28" fill="#1b4332"/>
-          <rect x="60" y="40" width="280" height="280" rx="28" fill="url(#packSheen)"/>
-          <defs>
-            <linearGradient id="packSheen" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#ffffff" stop-opacity=".12"/><stop offset=".5" stop-color="#ffffff" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="plugG2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#b07f56"/><stop offset="1" stop-color="#7c5234"/>
-            </linearGradient>
-          </defs>
-          <text x="200" y="96" text-anchor="middle" fill="#95d5b2" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="15" font-weight="600" letter-spacing="3">KOKO COIR WORLD</text>
-          <text x="200" y="132" text-anchor="middle" fill="#ffffff" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="28" font-weight="700">Coco Plugs</text>
-          <g transform="translate(200,225)">
-            <rect x="-55" y="-18" width="110" height="64" rx="16" fill="url(#plugG2)"/>
-            <ellipse cx="0" cy="-18" rx="55" ry="14" fill="#c79a72"/>
-            <path d="M-40 0h80M-40 16h80M-40 32h80" stroke="#6b4528" stroke-width="2" opacity=".4"/>
-            <path d="M0 -20v-26" stroke="#95d5b2" stroke-width="4" stroke-linecap="round"/>
-            <path d="M0 -44c-2-12-9-17-19-17 1 12 9 17 19 17z" fill="#74c69d"/>
-            <path d="M0 -44c2-12 9-17 19-17-1 12-9 17-19 17z" fill="#95d5b2"/>
-          </g>
-          <text x="200" y="302" text-anchor="middle" fill="#b7e4c7" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="14" font-weight="600">125 PLUGS · PEAT-FREE · VEGAN</text>
-        </svg>
-      </div>
-      <div class="reveal">
-        <div class="kicker">The Product</div>
-        <h2 style="font-size:clamp(1.7rem,3.6vw,2.5rem)">Coco Plugs<br>125-Pack</h2>
-        <div class="price-line">
-          <span class="price">$18.99</span>
-          <span class="per">just 15¢ per plug</span>
-        </div>
-        <ul class="prod-bullets">
-          <li><span class="dot">●</span>125 compressed coco coir seed starter plugs</li>
-          <li><span class="dot">●</span>Pre-formed seed hole — no tools needed</li>
-          <li><span class="dot">●</span>Works in trays, net cups, and straight into pots</li>
-          <li><span class="dot">●</span>Ships fast and free across the US</li>
-          <li><span class="dot">●</span>Compact pack: stores flat until you need it</li>
-        </ul>
-        <div class="buy-row">
-          <a class="btn btn-primary" href="https://www.amazon.com/" target="_blank" rel="noopener">Buy on Amazon ↗</a>
-          <a class="btn btn-ghost" href="#notify">Buy direct — coming soon</a>
-        </div>
-        <p class="amazon-note">Amazon listing launching soon — link will go live with our store page. More KoKo products on the way.</p>
-      </div>
+    <div class="sec-head reveal">
+      <div class="kicker">Full Product Line</div>
+      <h2>Everything your garden needs.<br><span style="color:var(--green)">All from coconuts.</span></h2>
+      <p class="sec-sub">7 premium coir-based products. 100% plant-based, vegan, and shipped from McKinney, Texas.</p>
     </div>
-    <div class="specs reveal">
-      <div class="spec"><div class="k">Pack size</div><div class="v">125 plugs</div></div>
-      <div class="spec"><div class="k">Packed dimensions</div><div class="v">12 × 12 cm × 8 mm</div></div>
-      <div class="spec"><div class="k">Weight</div><div class="v">600 g (1.32 lb)</div></div>
-      <div class="spec"><div class="k">Material</div><div class="v">100% coconut coir</div></div>
-      <div class="spec"><div class="k">pH</div><div class="v">5.5 – 6.5</div></div>
-      <div class="spec"><div class="k">Expansion</div><div class="v">Up to 5× when soaked</div></div>
-      <div class="spec"><div class="k">Additives</div><div class="v">None — pure fiber</div></div>
-      <div class="spec"><div class="k">Origin</div><div class="v">Shipped from Texas, USA</div></div>
+    <div class="prod-cards">
+
+      <div class="prod-card reveal">
+        <div class="badge">🪴</div>
+        <h3>Coco Plugs — 125 Pack</h3>
+        <p class="prod-desc">Compressed seed-starter plugs that expand 5× with water. Perfect for seeds, cuttings, hydroponics, and microgreens. Pre-formed seed hole — no tools needed.</p>
+        <div class="prod-price">
+          <span class="p-price">$18.99</span>
+          <span class="p-weight">600g · 125 plugs</span>
+        </div>
+      </div>
+
+      <div class="prod-card reveal">
+        <div class="badge">🧱</div>
+        <h3>Coir Brick — 800g / 1kg</h3>
+        <p class="prod-desc">Retail-packed coir brick expands to 8–12 litres of premium growing medium. Peat-free, pH balanced, and weed-seed free. Ideal for potting mixes and seed beds.</p>
+        <div class="prod-price">
+          <span class="p-price">$12.99</span>
+          <span class="p-weight">800g–1kg · Single</span>
+        </div>
+      </div>
+
+      <div class="prod-card reveal">
+        <div class="badge">📦</div>
+        <h3>5 kg Coir Block</h3>
+        <p class="prod-desc">Professional-grade 5kg compressed coir block yields up to 18 gallons of growing medium. For serious growers, raised beds, and large-scale propagation.</p>
+        <div class="prod-price">
+          <span class="p-price">$22.99</span>
+          <span class="p-weight">5 kg · Retail pack</span>
+        </div>
+      </div>
+
+      <div class="prod-card reveal">
+        <div class="badge">🌿</div>
+        <h3>Neem Oil + Emulsifier</h3>
+        <p class="prod-desc">Cold-pressed neem oil with emulsifier pre-mixed — no dish soap required. Ready-to-dilute organic pest control for indoor and outdoor plants. OMRI eligible.</p>
+        <div class="prod-price">
+          <span class="p-price">$19.99</span>
+          <span class="p-weight">~450ml · Ready-to-use</span>
+        </div>
+      </div>
+
+      <div class="prod-card reveal">
+        <div class="badge">🏠</div>
+        <h3>Mini Greenhouse</h3>
+        <p class="prod-desc">Compact portable greenhouse for year-round growing. Create the perfect humidity and warmth for seedlings, cuttings, and tropicals indoors or outdoors.</p>
+        <div class="prod-price">
+          <span class="p-price">$27.99</span>
+          <span class="p-weight">~500g · Flat-packed</span>
+        </div>
+      </div>
+
+      <div class="prod-card reveal">
+        <div class="badge">🥥</div>
+        <h3>Cocochips — 800g</h3>
+        <p class="prod-desc">Chunky coconut husk chips for orchids, aroids, and epiphytes. Exceptional drainage and airflow keep roots healthy and fungus-free. A favourite of the orchid community.</p>
+        <div class="prod-price">
+          <span class="p-price">$14.99</span>
+          <span class="p-weight">800g · Retail pack</span>
+        </div>
+      </div>
+
+      <div class="prod-card reveal">
+        <div class="badge">🌴</div>
+        <h3>Cocochips — 5 kg</h3>
+        <p class="prod-desc">Bulk 5kg cocochip bag for serious orchid growers and nurseries. Washed, low-EC, and consistent chip size for reliable drainage in any potting mix.</p>
+        <div class="prod-price">
+          <span class="p-price">$34.99</span>
+          <span class="p-weight">5 kg · Bulk pack</span>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:48px">
+      <a class="btn btn-primary reveal" href="https://www.amazon.com/" target="_blank" rel="noopener">Shop on Amazon ↗</a>
+      <p style="color:var(--muted);font-size:.84rem;margin-top:14px">All products launching on Amazon soon · Ships from McKinney, Texas</p>
     </div>
   </div>
 </section>
@@ -512,8 +558,16 @@
         <p>Peat is mined from wetland bogs that take millennia to form and store enormous amounts of carbon. Coir is a renewable byproduct of coconut harvesting. It also re-wets more easily, resists mold, and keeps a better air-to-water balance for roots.</p>
       </details>
       <details>
-        <summary>When will more KoKo products be available?</summary>
-        <p>We're starting with our Coco Plugs 125-pack and expanding the line soon — coir bricks, grow mats, and potting blends are on the roadmap. Join the list below to hear first.</p>
+        <summary>What products does KoKo Coir World offer?</summary>
+        <p>We're launching 7 products: Coco Plugs (125-pack), Coir Bricks (800g/1kg), 5kg Coir Blocks, Neem Oil with Emulsifier, Mini Greenhouses, Cocochips 800g, and Cocochips 5kg. All ship from McKinney, Texas.</p>
+      </details>
+      <details>
+        <summary>What are Cocochips and what are they used for?</summary>
+        <p>Cocochips are chunky coconut husk pieces used as a growing substrate for orchids, aroids, bromeliads, and other epiphytic plants. They provide excellent drainage and airflow, keeping roots healthy and fungus-free. Available in 800g retail packs and 5kg bulk bags.</p>
+      </details>
+      <details>
+        <summary>Is the Neem Oil ready to use?</summary>
+        <p>Yes — our neem oil comes with emulsifier pre-mixed, so it dilutes directly in water with no dish soap or separate emulsifier needed. Simply mix with water at the recommended ratio and spray. It's OMRI-eligible for certified organic growing programs.</p>
       </details>
     </div>
   </div>
@@ -525,7 +579,7 @@
     <div class="sec-head reveal" style="margin-bottom:0">
       <div class="kicker">Buy Direct — Coming Soon</div>
       <h2>Be first in line.</h2>
-      <p class="sec-sub">Direct checkout and new products are on the way. Leave your email and we'll let you know the moment they land.</p>
+      <p class="sec-sub">All 8 KoKo products are launching on Amazon soon. Leave your email and we'll let you know the moment they go live — plus exclusive early-access pricing.</p>
       <form class="notify-form" id="notifyForm">
         <input type="email" placeholder="you@email.com" required aria-label="Email address">
         <button class="btn btn-primary" type="submit">Notify me</button>
